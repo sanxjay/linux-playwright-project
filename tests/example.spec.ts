@@ -30,3 +30,10 @@ test('simple dummy test for CI trigger', async ({ page }) => {
   // await expect(true).toBe(true); // This always passes and is truly just for a "dummy" change.
 });
 // --- END OF NEW TEST BLOCK ---
+
+// Second test 
+test('another dummy test for CI', async ({ page }) => {
+  await page.goto('https://example.com');
+  await expect(page.locator('h1')).toHaveText('Example Domain'); // A slightly different assertion
+});
+
